@@ -11,7 +11,7 @@ def parameter_parser():
     A method to parse up command line parameters. By default it trains on the Cora dataset.
     The default hyperparameters give a good quality representation without grid search.
     """
-    parser = argparse.ArgumentParser(description="Run MixHop.")
+    parser = argparse.ArgumentParser(description="")
 
     parser.add_argument('--device', type=str, default='cuda:0' if torch.cuda.is_available() else 'cpu')
 
@@ -21,12 +21,12 @@ def parameter_parser():
 
     parser.add_argument("--path_weight",
                         nargs="?",
-                        default="/home/miaorui/MGCN/weights/",
+                        default="./weights/",
                         help="path_weight.")
 
     parser.add_argument("--path_result",
                         nargs="?",
-                        default="/home/miaorui/MGCN/results/",
+                        default="./results/",
                         help="path_result.")
 
     parser.add_argument("--dataset_name",
@@ -46,7 +46,7 @@ def parameter_parser():
 
     parser.add_argument("--train_ratio",
                         type=float,
-                        default=0.05,
+                        default=0.005,
 	                help="Training set ratio. Default is 0.5%.")
 
     parser.add_argument("--val_ratio",
