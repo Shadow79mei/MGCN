@@ -1,9 +1,9 @@
 # Multiorder Graph Convolutional Network With Channel Attention for Hyperspectral Change Detection
 
 # Usage
-we have uploaded the pretrained parameters of the model in the folder "pre_trained_gnn". To use the model, you can simply run the following command:
+The hyperparameters can be set in param_parser.py. To use the model, you can simply run the following command:
 
-run meta_demo.py
+run main.py
 
 If you have any questions, you can send me an email and I will reply in time.
 
