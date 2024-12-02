@@ -1,4 +1,4 @@
-# Multiorder Graph Convolutional Network With Channel Attention for Hyperspectral Change Detection
+# MGCN: Multiorder Graph Convolutional Network With Channel Attention for Hyperspectral Change Detection
 
 # Usage
 The hyperparameters can be set in param_parser.py. To use the model, you can simply run the following command:
